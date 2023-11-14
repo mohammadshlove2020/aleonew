@@ -1,7 +1,7 @@
 
 
 source $HOME/.bash_profile
-CELESTIA_CHAIN="mamaki"
+
 
 echo "export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin" >> $HOME/.bash_profile
 git clone https://github.com/celestiaorg/celestia-app.git
