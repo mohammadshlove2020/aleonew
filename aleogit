@@ -10,12 +10,12 @@ git clone https://github.com/celestiaorg/networks
 
 -------------------------------
 git clone https://github.com/celestiaorg/networks.git
-CELESTIA_CHAIN="mamaki"
+
 --------------------------
 CELESTIA_WALLET="MY_WALLET"
 CELESTIA_CHAIN="mamaki"
 
-
+CELESTIA_CHAIN="mamaki"
 CELESTIA_NODENAME="amir" 
 CELESTIA_NODENAME="amir" 
 CELESTIA_WALLET="amir8372"
