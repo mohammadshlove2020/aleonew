@@ -10,7 +10,7 @@ git clone https://github.com/celestiaorg/networks
 git clone https://github.com/celestiaorg/networks.git
 
 --------------------------
-CELESTIA_WALLET="MY_WALLET"
+
 
 CELESTIA_NODENAME="amir" 
 CELESTIA_WALLET="amir8372"
