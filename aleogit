@@ -1,11 +1,8 @@
 git clone https://github.com/celestiaorg/celestia-app.git
-
-
 echo "export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin" >> $HOME/.bash_profile
 
 -------------------------------------------
 git clone https://github.com/celestiaorg/networks
-
 -------------------------------
 git clone https://github.com/celestiaorg/celestia-app.git
 
