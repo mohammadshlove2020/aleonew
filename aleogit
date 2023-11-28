@@ -3,9 +3,6 @@ echo "export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin" >> $HOME/.bash_profile
 
 -------------------------------------------
 git clone https://github.com/celestiaorg/networks
--------------------------------
-git clone https://github.com/celestiaorg/celestia-app.git
-
 --------------------------
 git clone https://github.com/celestiaorg/networks.git
 CELESTIA_WALLET="amir8372"
