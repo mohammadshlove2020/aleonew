@@ -3,7 +3,7 @@ echo "export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin" >> $HOME/.bash_profile
 -------------------------------------------
 git clone https://github.com/celestiaorg/networks
 --------------------------
-git clone https://github.com/celestiaorg/networks.git
+
 CELESTIA_WALLET="amir8372"
 CELESTIA_CHAIN="mamaki"
 git clone https://github.com/celestiaorg/celestia-app.git
@@ -24,6 +24,7 @@ echo $BOOTSTRAP_PEERS
 
 ------------------------------------------------
 sed -i.bak -e "s/^bootstrap-peers *=.*/bootstrap-peers = \"$BOOTSTRAP_PEERS\"/" $HOME/.celestia-app/config/config.toml
+git clone https://github.com/celestiaorg/networks.git
 
 -----------------------------------------------------------
 sed -i 's/timeout-commit = ".*/timeout-commit = "25s"/g' $HOME/.celestia-app/config/config.toml
