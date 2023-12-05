@@ -2,7 +2,6 @@ git clone https://github.com/celestiaorg/celestia-app.git
 echo "export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin" >> $HOME/.bash_profile
 -------------------------------------------
 git clone https://github.com/celestiaorg/networks
---------------------------
 
 CELESTIA_CHAIN="mamaki"
 git clone https://github.com/celestiaorg/celestia-app.git
@@ -18,7 +17,7 @@ CELESTIA_CHAIN="mamaki"
 BOOTSTRAP_PEERS=$(curl -sL https://raw.githubusercontent.com/celestiaorg/networks/master/mamaki/bootstrap-peers.txt | tr -d '\n')
 echo $BOOTSTRAP_PEERS
 --------------------------------------------------
-------------------------------------------------
+
 sed -i.bak -e "s/^bootstrap-peers *=.*/bootstrap-peers = \"$BOOTSTRAP_PEERS\"/" $HOME/.celestia-app/config/config.toml
 git clone https://github.com/celestiaorg/networks.git
 CELESTIA_WALLET="amir8372"
