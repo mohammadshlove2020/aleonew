@@ -23,7 +23,6 @@ s/^max-num-outbound-peers *=.*/max-num-outbound-peers = $max_num_outbound_peers/
 s/^pruning-interval *=.*/pruning-interval = \"$pruning_interval\"/" $HOME/.celestia-app/config/app.toml
 ---------------------------------------------------
 celestia-appd config chain-id $CELESTIA_CHAIN
-celestia-appd config chain-id $CELESTIA_CHAIN
 -------------------------------------------------------
 tee $HOME/celestia-appd.service > /dev/null <<EOF
 [Unit]
