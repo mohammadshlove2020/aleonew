@@ -19,8 +19,6 @@ sed -i 's/peer-gossip-sleep-duration *=.*/peer-gossip-sleep-duration = "2ms"/g' 
 sed -i -e "s/^use-legacy *=.*/use-legacy = false/;\
 s/^max-num-inbound-peers *=.*/max-num-inbound-peers = $max_num_inbound_peers/;\
 s/^max-num-outbound-peers *=.*/max-num-outbound-peers = $max_num_outbound_peers/;\
-
-s/^pruning-interval *=.*/pruning-interval = \"$pruning_interval\"/" $HOME/.celestia-app/config/app.toml
 ---------------------------------------------------
 celestia-appd config chain-id $CELESTIA_CHAIN
 -------------------------------------------------------
@@ -28,7 +26,6 @@ tee $HOME/celestia-appd.service > /dev/null <<EOF
 [Unit]
   Description=celestia-appd Cosmos daemon
   After=network-online.target
-[Service]
   User=$USER
   ExecStart=$(which celestia-appd) start
   Restart=on-failure
