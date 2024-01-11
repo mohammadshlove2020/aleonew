@@ -19,9 +19,7 @@ sed -i 's/peer-gossip-sleep-duration *=.*/peer-gossip-sleep-duration = "2ms"/g' 
 sed -i -e "s/^use-legacy *=.*/use-legacy = false/;\
 s/^max-num-inbound-peers *=.*/max-num-inbound-peers = $max_num_inbound_peers/;\
 s/^max-num-outbound-peers *=.*/max-num-outbound-peers = $max_num_outbound_peers/;\
----------------------------------------------------
-celestia-appd config chain-id $CELESTIA_CHAIN
--------------------------------------------------------
+
 tee $HOME/celestia-appd.service > /dev/null <<EOF
 [Unit]
   Description=celestia-appd Cosmos daemon
