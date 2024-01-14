@@ -17,8 +17,6 @@ sed -i 's/timeout-commit = ".*/timeout-commit = "25s"/g' $HOME/.celestia-app/con
 sed -i 's/peer-gossip-sleep-duration *=.*/peer-gossip-sleep-duration = "2ms"/g' $HOME/.celestia-app/config/config.toml
 -----------------------------------------------------------------
 s/^max-num-inbound-peers *=.*/max-num-inbound-peers = $max_num_inbound_peers/;\
-s/^max-num-outbound-peers *=.*/max-num-outbound-peers = $max_num_outbound_peers/;\
-
 [Unit]
   Description=celestia-appd Cosmos daemon
   After=network-online.target
