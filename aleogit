@@ -21,7 +21,6 @@ s/^max-num-inbound-peers *=.*/max-num-inbound-peers = $max_num_inbound_peers/;\
   Description=celestia-appd Cosmos daemon
   After=network-online.target
   User=$USER
-  ExecStart=$(which celestia-appd) start
   Restart=on-failure
   RestartSec=3
   LimitNOFILE=65535
